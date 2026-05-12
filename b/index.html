@@ -102,9 +102,10 @@
             </a>
         </div>
         <div style="min-height: 422px;">
-            <img class="bg" src="./images/bg.avif" loading="lazy" decoding="async" width="490" height="422" alt="bg">
+            <img class="bg" src="./images/bg.avif" loading="eager" decoding="async" width="490" height="422" alt="bg">
         </div>
     </main>
+    
   <script defer>
         let time = 120; const timer = document.querySelector(".timer"); function updateTimer() { let e = Math.floor(time / 60), t = time % 60; e = e < 10 ? "0" + e : e, t = t < 10 ? "0" + t : t, timer.textContent = `${e}:${t}`, time > 0 ? time-- : clearInterval(interval) } updateTimer(); const interval = setInterval(updateTimer, 1e3);
     </script>
