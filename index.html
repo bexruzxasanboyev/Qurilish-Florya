@@ -6,128 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qurilish Florya</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}html, body{overflow-x:hidden}body{background-color:white}.container{max-width:440px;width:100%;margin:0 auto;padding-top:9px;display:flex;flex-direction:column;align-items:center;font-family:sans-serif}.header{display:flex;justify-content:center;gap:12px;margin-bottom:14px}.header__box{display:flex;align-items:center;gap:8px;max-width:192px;width:100%;border:1px solid #000000;border-radius:9px;justify-content:center;padding:10px}.boxx{min-height:10px;background:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #4ED2FF 200%)}.header__text{font-family:Inter, sans-serif;color:#000;font-weight:500;font-size:18px;line-height:100%;text-wrap:nowrap}.header__time{font-family:Inter, sans-serif;font-weight:500;font-size:18px;line-height:100%;text-align:center}.info{display:flex;align-items:center;justify-content:center;gap:2.5px;margin-bottom:12px}.info img{margin-top:-15px}.info p{background-color:#FFF5A4;max-width:100px;width:100%;border-radius:16px;padding:4px 17px;color:#055A42;font-family:Kuunari, sans-serif;font-weight:700;font-size:28px;line-height:100%;letter-spacing:1%;text-align:center;text-transform:uppercase;max-width:100px;width:100%}.title{font-family:Kuunari, sans-serif;font-weight:700;font-size:clamp(30px, 9vw, 35px);line-height:114%;text-align:center;text-transform:uppercase}.title span{color:#008F68}#timer{font-family:"Bebas Neue" , sans-serif;font-weight:400;font-size:32px;line-height:100%;text-transform:uppercase}.center{position:relative;width:100%;display:flex;align-items:center;justify-content:center}.expert__img{max-width:390px;width:100%;height:auto;margin-bottom:-80px;position:relative;z-index:1;-webkit-mask-image:linear-gradient(to bottom, black 70%, transparent 100%);mask-image:linear-gradient(to bottom, black 70%, transparent 100%)}.gift{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 10px;border-radius:15px;border:2px solid #045860;max-width:340px;width:100%;margin-bottom:16px;box-shadow:0px 0px 10px 1px #04555C80}.gift__info h2{font-family:Kuunari, sans-serif;font-weight:900;font-size:clamp(22px, 6.9vw, 26px);line-height:100%;letter-spacing:2%;margin-bottom:4px}.gift__info p{font-family:Inter, sans-serif;font-weight:400;font-size:clamp(13px, 4.2vw, 16px);line-height:130%}.event__btn{display:flex;align-items:center;justify-content:center;color:#7D4C29;font-family:Kuunari, sans-serif;font-weight:700;font-size:28px;line-height:100%;letter-spacing:1%;text-align:center;text-transform:uppercase;padding:26px 0;background:linear-gradient(92.32deg, #FED399 3.07%, #FFEED7 52.86%, #FCC478 100.78%);box-shadow:0px 4px 0px 0px #B99462;border-radius:50px;position:relative;z-index:3;text-decoration:none;gap:15px}.timer__box{display:flex;flex-direction:column;align-items:center;margin-left:auto;margin-right:auto;gap:4px;margin-bottom:10px;border-radius:33px;padding:8px 21px}.timer__box p{font-family:Inter, sans-serif;font-weight:400;font-size:16px;line-height:130%}
+    * { margin: 0; padding: 0; box-sizing: border-box } body, html { overflow-x: hidden } body { background: linear-gradient(355.35deg, #007B5E -19.77%, #004531 101.55%); } .webiner { padding-top: 16px; padding-bottom: 32px } .webiner__container { max-width: 400px; margin: 0 auto; padding: 0 10px; display: flex; flex-direction: column; justify-content: center; position: relative } .webiner__box { margin-left: 10px } .webiner__header { display: flex; align-items: center; justify-content: space-between; background-color: white; border-radius: 10px; padding: 9px 16px 10px 16px; margin-bottom: 24px } .webiner__header-title { font-family: "Cabrito Contrast", sans-serif; font-weight: 600; font-size: clamp(15px, 5vw, 18px); line-height: 110%; text-align: center; text-transform: uppercase; color: #AA0000 } .webiner__header-item { display: flex; align-items: center; gap: 9px } .webiner__header-item p { font-family: "Inter", sans-serif; font-weight: 400; font-size: clamp(15px, 5vw, 16px); line-height: 145% } .webiner__title { font-family: "Cabrito Contrast", sans-serif; font-weight: 500; font-size: clamp(25px, 7.8vw, 30px); line-height: 130%; text-transform: uppercase; margin-bottom: 4px; color: white } .webiner__title span { color: #FFCA84 } .webiner__text { font-family: "SF Pro Display", sans-serif; font-weight: 400; font-size: 18px; line-height: 100%; color: white; margin-bottom: 16px } .webiner__images { max-width: 390px; margin-top: -60px; display: flex; width: 100%; height: auto; margin-bottom: 16px; margin-left: auto; margin-right: auto } .gift { display: flex; align-items: center; gap: 9px; margin-bottom: 23px; padding: 12px 28px 12px 13px; background-color: white; border: 1px solid #FFCA58; border-radius: 20px; justify-content: center; margin-left: auto; margin-right: auto; max-width: 346px; width: 100% } .gift__info h3 { font-family: Inter, sans-serif; font-weight: 700; font-size: clamp(14.5px, 4.6vw, 18px); line-height: 102%; margin-bottom: 4px } .gift__info p { font-family: "SF Pro Display", sans-serif; font-weight: 400; font-size: clamp(12px, 3.5vw, 15px); line-height: 130% } .logo { position: absolute; top: 153px; right: 120px; } .webiner__btn { max-width: 350px; width: 100%; cursor: pointer; border: none; box-shadow: 0px 0px 21.93px 0px #FFEF9A24 inset, 0px 0px 41.23px 0px #FFD84E33, 0px 4px 0px 0px #B3884E; padding: 33px 0; background: linear-gradient(93.1deg, #FFCA85 -12.09%, #FDE7CA 51.33%, rgba(255, 189, 103, 0.99) 101.95%); margin-bottom: 24px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 22px; border-radius: 8px; line-height: 100%; text-decoration: none; letter-spacing: 5%; margin-top: -45px; margin-bottom: 23px; text-transform: uppercase; color: #685031; margin-left: auto; margin-right: auto; display: flex; align-items: center; justify-content: center } .tiemr { font-family: "Cabrito Contrast", sans-serif; font-weight: 400; font-size: 36px; line-height: 100%; letter-spacing: -2%; text-transform: uppercase; margin-bottom: 24px; color: white } .webiner__info { margin-bottom: 16px } .webiner__info-title { font-family: "Cabrito Contrast", sans-serif; font-weight: 600; font-size: 30px; line-height: 130%; letter-spacing: -2%; text-transform: uppercase; margin-bottom: 16px; text-align: center; color: white } .webiner__nav { display: flex; flex-direction: column; gap: 8px; max-width: 335px; width: 100%; margin: 0 auto } .webiner__item { display: flex; align-items: center; gap: 8px; border-radius: 15px; padding: 10px; background-color: white } .webiner__item img { background: linear-gradient(355.35deg, #007B5E -19.77%, #004531 101.55%); border-radius: 10px } .webiner__item p { font-family: "SF Pro Display", sans-serif; font-weight: 400; font-size: clamp(13px, 4.3vw, 16px); line-height: 130% } .timer { font-family: "Cabrito Contrast", sans-serif; font-weight: 400; font-size: 36px; line-height: 100%; letter-spacing: -2%; text-transform: uppercase; text-align: center; margin-bottom: 24px; color: white } @media (max-width:390px) { .webiner__box { margin-left: 0 } } @media (max-width:355px) { .webiner__header-item { gap: 3px } .webiner__header-min { gap: 5px } .webiner__images { margin-top: -40px; } .webiner__text { font-size: 15px; } .logo { top: 138px; right: 89px; } }
     </style>
-    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
     <noscript>
-        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/main.css">
     </noscript>
     <meta name="facebook-domain-verification" content="k64r696frtb9537qwjhcf0o96qh0u0" />
-    <script async src="https://spliturltest.asosit.uz/abtest.js" data-site-id="AQBz1rhiAn-L10M7" data-api-base="https://spliturltest.asosit.uz"></script>
 </head>
 
 <body>
-
     <main>
-        <div class="wrapper">
-            <div class="container">
-                <div class="boxx">
-                    <div class="header">
-                        <div class="header__box">
-                            <img src="./images/calenar.png" loading="lazy" decoding="async" width="18" height="19"
-                                alt="calenar">
-                            <p class="header__text">
-                                22-May | 20:00 da
-                            </p>
+        <section class="webiner">
+            <div class="webiner__box">
+                <div class="webiner__container">
+
+                    <div class="webiner__header">
+                        <div class="webiner__header-item">
+                            <img src="/images/calenar.png" loading="lazy" decoding="async" width="18" height="19"
+                                alt="calendar">
+                            <p>22-May | 20:00 da</p>
                         </div>
-                        <div class="header__box" style="max-width: 84px;">
-                            <p class="header__time">50 OY</p>
-                        </div>
-                    </div>
-
-                    <h1 class="title">
-                        <span>37% chegirma asosida</span> <br>
-                        Yangi xonadon sotib olish <br> imkoniyati
-                    </h1>
-                    <img src="./images/mainImg.avif" alt="Speaker rasmi" class="expert__img" decoding="async"
-                        loading="lazy" width="390" height="471">
-                </div>
-                <div style="padding: 0 10px; max-width: 366px; width: 100%;">
-                    <a class="event__btn registerBtn" style="margin-bottom: 18px;" href="https://t.me/+IWROP-sb9FExODQ6">
-                        Bepul QATNASHISH
-                        <img src="./images/cursor.avif" loading="lazy" decoding="async" width="35" height="35"
-                            alt="cursor">
-                    </a>
-                </div>
-
-                <div class="info">
-                    <img src="./images/arrow.avif" loading="lazy" decoding="async" width="24" height="20" alt="arrow">
-                    <p>Bepul</p>
-                </div>
-
-
-
-                <div class="timer__box">
-                    <p>Ro‘yxatdan o‘tish uchun qolgan vaqt:</p>
-                    <p class="timer" id="timer">02:00</p>
-                </div>
-
-                <div style="padding: 0 10px;">
-                    <div class="gift">
-                        <img src="./images/gift.avif" loading="lazy" decoding="async" width="70" height="71" alt="gift">
-                        <div class="gift__info">
-                            <h2>BEPULGA 2 TA XONADON</h2>
-                            <p>Taqdimotda qatnashib yangi <br> xonadon yutib olishingiz mumkin! </p>
+                        <div class="webiner__header-item">
+                            <p style="font-size: 20px;">50 OY</p>
                         </div>
                     </div>
-                </div>
 
-                <h2 class="event__list__title">Qatanshuvchilar uchun <br> <b>37% gacha</b> chegirma</h2>
-                <ul class="event__list">
-                    <li class="event__list__item" style="margin-left: 4px; gap: 14px;">
-                        <span>
-                            <img src="./images/verfiy.avif" loading="lazy" decoding="async" width="21" height="21"
-                                alt="verfiy">
-                            <h3>01</h3>
-                        </span>
-                        <p class="event__list__item__text">
-                            <b>1xonali xonadonni 152mln</b> <br> so’m chegirma bilan xarid qiling
-                        </p>
-                    </li>
-                    <li class="event__list__item">
-                        <span>
-                            <img src="./images/verfiy.avif" loading="lazy" decoding="async" width="21" height="21"
-                                alt="verfiy">
-                            <h3>02</h3>
-                        </span>
-                        <p class="event__list__item__text">
-                            <b>2xonali xonadonni 280mln</b> <br> chegirma bilan xarid qiling
-                        </p>
-                    </li>
-                    <li class="event__list__item">
-                        <span>
-                            <img src="./images/verfiy.avif" loading="lazy" decoding="async" width="21" height="21"
-                                alt="verfiy">
-                            <h3>03</h3>
-                        </span>
-                        <p class="event__list__item__text">
-                            <b>3xonali xonadonni 330mln</b> <br> chegirma bilan xarid qiling
-                        </p>
-                    </li>
-                </ul>
+                    <h2 class="webiner__title"><span>260 MLN SO’M CHEGIRMA</span> <br> asosida yangi XONADON <br> XARID
+                        QILING!</h2> <img class="logo" src="./images/logo.avif" loading="lazy" decoding="async"
+                        width="52" height="30" alt="logo">
 
-
-                <div style="padding: 0 10px; max-width: 366px; width: 100%;">
-                    <a class="event__btn registerBtn" style="margin-bottom: 18px;" href="https://t.me/+IWROP-sb9FExODQ6">
-                        Bepul QATNASHISH
-                        <img src="./images/cursor.avif" loading="lazy" decoding="async" width="35" height="35"
-                            alt="cursor">
-                    </a>
-                </div>
-
-
-                <div class="info">
-                    <img src="./images/arrow.avif" loading="lazy" decoding="async" width="24" height="20" alt="arrow">
-                    <p>Bepul</p>
+                    <p class="webiner__text">Chegirma muddati cheklangan</p>
                 </div>
             </div>
-        </div>
+
+
+            <img class="webiner__images" src="./images/speaker.avif" loading="lazy" decoding="async" width="390"
+                height="407" alt="house">
+            <div class="webiner__container">
+                <a class="webiner__btn" href="https://t.me/+IWROP-sb9FExODQ6">
+                    Bepul qatnashish
+                </a>
+
+                <div class="gift">
+                    <img src="./images/gift.avif" loading="lazy" decoding="async" width="60" height="63" alt="gift">
+                    <div class="gift__info">
+                        <h3>BEPULGA 2 TA XONADON</h3>
+                        <p>Taqdimotda qatnashib yangi <br> xonadon yutib olishingiz mumkin! </p>
+                    </div>
+                </div>
+
+                <div class="timer"></div>
+
+
+                <div class="webiner__info">
+                    <h3 class="webiner__info-title">Sizni kutmoqda:</h3>
+
+                    <ul class="webiner__nav">
+                        <li class="webiner__item">
+                            <img src="./images/dream/1.avif" loading="lazy" decoding="async" width="67" height="66"
+                                alt="img">
+                            <p><b>50 oylik foizsiz</b> muddatli to’lov <br> asosida xonadon xarid qilish! </p>
+                        </li>
+                        <li class="webiner__item">
+                            <img src="./images/dream/2.avif" loading="lazy" decoding="async" width="67" height="66"
+                                alt="img">
+                            <p>Har bir kv metr uchun <b>4 mln <br>
+                                    so’mgacha</b> chegirma.</p>
+                        </li>
+                        <li class="webiner__item">
+                            <img src="./images/dream/3.avif" loading="lazy" decoding="async" width="67" height="66"
+                                alt="img">
+                            <p><b>BEPULGA xonadon</b> yutib olish, <br>
+                                faqat vebinar ishtirokchilari uchun
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="webiner__btn"
+                    style="margin-bottom: 0; margin-top: 0; font-family: Inter, sans-serif; font-size: 22px; font-weight: 600;"
+                    href="https://t.me/+IWROP-sb9FExODQ6">
+                    Bepul qatnashish
+                </a>
+
+            </div>
+        </section>
     </main>
 
     <script defer>
-        const timerElement = document.getElementById("timer"); let totalSeconds = 120; const countdown = setInterval((() => { const t = Math.floor(totalSeconds / 60), e = totalSeconds % 60; timerElement.textContent = `${String(t).padStart(2, "0")}:${String(e).padStart(2, "0")}`, totalSeconds <= 0 && (clearInterval(countdown), timerElement.style.color = "red", alert("Vaqt tugadi!")), totalSeconds-- }), 1e3);
+        let time = 120; const timer = document.querySelector(".timer"); function updateTimer() { let e = Math.floor(time / 60), t = time % 60; e = e < 10 ? "0" + e : e, t = t < 10 ? "0" + t : t, timer.textContent = `${e}:${t}`, time > 0 ? time-- : clearInterval(interval) } updateTimer(); const interval = setInterval(updateTimer, 1e3);
     </script>
-    <!-- Meta Pixel Code -->
+        <!-- Meta Pixel Code -->
 <script defer>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
